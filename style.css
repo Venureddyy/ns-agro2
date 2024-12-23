@@ -55,7 +55,7 @@ header nav a:hover {
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -63,7 +63,7 @@ header nav a:hover {
 }
 
 .hero-text .hero-logo {
-    max-width: 300px; /* Adjust the image width as needed */
+    max-width: 400px; /* Adjust the image width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Optional: space below the image */
 }
