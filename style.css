@@ -1,0 +1,178 @@
+/* General reset and styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+
+header img {
+    height: 30px; /* Add logo path to the HTML file as src */
+
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 0 30px;
+    color: white;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    color: #00FF7F;
+}
+
+/* First Page - Background Video */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Background video, keep elements above */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text .hero-logo {
+    max-width: 300px; /* Adjust the image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Optional: space below the image */
+}
+
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+/* Slideshow Section */
+.slideshow {
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slideshow img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Product and Services - Grid */
+.grid {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-all a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Contact Us Page */
+.contact-section {
+    text-align: center;
+    padding: 100px;
+    background-color: #eef;
+}
+
+.contact-section button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #128C7E;
+}
+
+/* About Us Page */
+.about-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.about-section a {
+    color: blue;
+    text-decoration: none;
+}
